@@ -20,7 +20,7 @@ app.get("/js", function(req, res){
 	res.render("js.html");
 })
 
-/* For localhost:3000
+/* For localhost:3000 3
 app.listen(port, function(){
 	console.log("Server is running on " + port);
 })
