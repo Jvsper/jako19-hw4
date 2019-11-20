@@ -1,7 +1,6 @@
 {
   "name": "hw4",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +12,14 @@
     "express": "^4.17.1",
     "faker": "^4.1.0",
     "nodemon": "^1.19.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jvsper/jako19-hw4.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jvsper/jako19-hw4/issues"
+  },
+  "homepage": "https://github.com/Jvsper/jako19-hw4#readme",
+  "description": ""
 }

@@ -85,3 +85,8 @@ main div{
  	justify-content: center;
  	font-size: 0.8em;
 }
+
+#cat {
+	max-width: 500px;
+	height: auto;
+}

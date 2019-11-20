@@ -8,27 +8,32 @@ var faker = require("faker");
 
 
 app.get("/", function(req, res){
-	var randomCat = [] 
-
-	for (var i = 0; i < 5; i++ )
-	{
-		randomCat[i] = faker.image.cats();
-	}
-	
-	
-	res.render("index.html", {"cats": randomCat});
+	var cats = faker.image.cats();
+	console.log (cats);
+	res.render("index.html", {"cats": cats});
 })
 
 app.get("/html", function(req, res){
-	res.render("html.html");
+
+	var cats = faker.image.cats();
+	console.log (cats);
+
+	res.render("html.html",{"cats":cats});
 })
 
 app.get("/css", function(req, res){
-	res.render("css.html");
+	var cats = faker.image.cats();
+	console.log (cats);
+
+
+	res.render("css.html",{"cats":cats});
 })
 
 app.get("/js", function(req, res){
-	res.render("js.html");
+	var cats = faker.image.cats();
+	console.log (cats);
+
+	res.render("js.html",{"cats":cats});
 })
 
 /*
@@ -42,4 +47,5 @@ app.listen(port, function(){
 app.listen(process.env.PORT, process.env.IP, function(){
 	console.log("Express server is now running");
 })
+
 
