@@ -1,29 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Fullstack Development</title>
-	<link rel="stylesheet" type="text/css" href="/css/styles.css">
-	<meta charset="UTF-8">
-</head>
-<body>
-	<header>
-		<h1> Fullstack Web Development</h1>
-		<img class="head_img" src="/img/html.png" alt="html5_logo">
-		<img class="head_img" src="/img/css.png" alt="css_logo">
-		<img class="head_img" src="/img/js.png" alt="js_logo">
-    </header>
+<% include partials/header.ejs %>
 
-	<hr/>
-
-	<nav>
-		<a href="/">Home</a>
-		<a href="/html">HTML</a>
-		<a href="/css">CSS</a>
-		<a href="/js">JS</a>
-	</nav>
-	<br/>
-	<main>
-		<div>
 			<h2>HTML</h2>
 			<p>The definition of HTML is HyperText Markup Language.</p>
 				<ul>
@@ -36,24 +12,5 @@
  			<p>HTML consists of a series of short codes typed into a text file by the site author these are the tags. The text is then saved as a html file, and viewed through a browser, like Internet Explorer or Netscape Navigator. This browser reads the file and translates the text into a visible form, hopefully rendering the page as the author had intended. Writing your own HTML entails using tags correctly to create your vision. You can use anything from a rudimentary text editor to a powerful graphical editor to create HTML pages.</p>
 		</div>
 		<img id="what-is-html" src="/img/what-is-html.jpg" alt="what-is-html">
-	</main>
-		<p>Sources used to develop this site:</p>
-	<ul>
-		<li><a href="https://skillcrush.com/2012/04/03/css/">The Ultimate Guide To CSS</a></li>
-		<li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript">MDN: What is JavaScript?</a></li>
-		<li><a href="https://www.w3.org/standards/webdesign/htmlcss">What is HTML?</a></li>
-	</ul>
-<hr/>
-	<footer>
-		<div>
-            CST336 Internet Programming. 2019&copy; Jasper Kolp <br/>
-            <strong>Disclaimer: </strong>The information in this webpage is fictitious. <br/>
-            It is used for academic purpose only.
-            </div>
-
-            <figure>
-            	<img src="/img/csumb.png" alt="csumb_logo">
-            </figure>
-	</footer>
-</body>
-</html>
+		
+<% include partials/footer.ejs %>
