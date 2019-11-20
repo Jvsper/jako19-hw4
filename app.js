@@ -3,9 +3,20 @@ const app = express();
 const port = 3000;
 app.engine('html', require('ejs').renderFile);
 app.use(express.static('public'));
+var faker = require("faker");
+
+
 
 app.get("/", function(req, res){
-	res.render("index.html");
+	var randomCat = [] 
+
+	for (var i = 0; i < 5; i++ )
+	{
+		randomCat[i] = faker.image.cats();
+	}
+	
+	
+	res.render("index.html", {"cats": randomCat});
 })
 
 app.get("/html", function(req, res){
@@ -31,3 +42,4 @@ app.listen(port, function(){
 app.listen(process.env.PORT, process.env.IP, function(){
 	console.log("Express server is now running");
 })
+
